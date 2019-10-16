@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./calc.js"></script>
+    <title>像素计算器</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <h3>rem计算器</h3>
+            <div>
+                root: <input type="text" v-model="root"><a @click="copyStr('root')">复制</a>
+            </div>
+            <div>
+                PX: <input type="text" v-model="px"><a @click="copyStr('px')">复制</a>
+            </div>
+            <div>
+                PX / 2: <input type="text" v-model="px2" disabled> <a @click="copyStr('px2')">复制</a>
+            </div>
+            <div>
+                Rem: <input type="text" v-model="rem" disabled> <a @click="copyStr('rem')">复制</a>
+            </div>
+            <div>
+                Rem / 2 : <input type="text" v-model="rem2" disabled><a @click="copyStr('rem2')">复制</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
